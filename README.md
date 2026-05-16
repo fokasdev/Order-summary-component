@@ -15,4 +15,4 @@ A clean order summary card component featuring a music subscription plan layout.
 * **Mobile-first workflow** – Ensuring responsiveness across all viewports.
 
 ## 📸 Preview
-![Design Preview](./images/Képernyőkép%202026-05-16%2012008.png)
+![Design Preview](./images/Képernyőkép%202026-05-16%182008.png)
