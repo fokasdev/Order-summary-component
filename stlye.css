@@ -20,7 +20,6 @@ body{
     height: 100vh;
     background-color: var(--main-bg);
     font-family: "Red Hat Display", sans-serif;
-    text-align: center;
     margin: 0;
 }
 
