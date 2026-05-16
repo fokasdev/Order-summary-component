@@ -51,8 +51,9 @@ h1{
     font-weight: 400;
     line-height: 1.9rem;
     margin-block-start: calc(2rem);
-    margin-inline-start: calc(1.2rem);
+    margin-inline-start: 1.5rem;
 }
+
 
 .plan-card{
     background-color: var(--plan-bg);
