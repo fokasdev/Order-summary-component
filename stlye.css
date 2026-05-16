@@ -1,0 +1,151 @@
+:root {
+    /* Háttérszínek */
+    --main-bg: #e0e8ff;       /* Az egész oldal halványkék háttere */
+    --card-bg: #ffffff;       /* Maga a kártya tiszta fehér háttere */
+    --plan-bg: #f5f7ff;       /* Az "Annual Plan" kis belső dobozának háttere */
+
+    /* Elsődleges színek (Gombok és Címek) */
+    --bright-blue: #3829e0;   /* A nagy gomb és az illusztráció fő színe */
+    --dark-blue: #1f2f56;     /* Az "Order Summary" főcím sötétkék színe */
+
+    /* Szövegszínek és Hoverek */
+    --desaturated-blue: #7280a7; /* A leíró szövegek szürkéskék színe */
+    --hover-purple: #766cf1;     /* A gomb színe, amikor ráviszed az egeret */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-bg);
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+
+.card-container{
+    background-color: var(--card-bg);
+    width: 28rem;
+    height: 41rem;
+    border-radius: 1rem;
+}
+
+.card-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+h1{
+    color: var(--dark-blue);
+    font-weight: 900;
+    padding-inline-start: 1rem;
+}
+
+.order-info{
+    color: var(--desaturated-blue);
+    max-width: 20rem;
+    font-size: 1.3rem;
+    padding-inline-start: 4rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+}
+
+.plan-card{
+    background-color: var(--plan-bg);
+    border-radius: 1rem;
+    width: 22rem; 
+    padding: 1.2rem;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 1.5rem auto;;
+}
+
+.plan-left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan-left img{
+    margin-inline-end: 0.8rem;    
+
+}
+
+.plan-left h2{
+    color: var(--dark-blue);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.plan-left p{
+    color: var(--desaturated-blue);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.change-link{
+    color: var(--bright-blue);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.2 ease;
+}
+
+.change-link:hover{
+    color: var(--hover-purple);
+    text-decoration: none;
+}
+
+
+
+.proceed-brn{
+    border: none;
+    background-color: var(--bright-blue);
+    color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 22rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px rgba(56, 41, 224, 0.2);
+    transition: background-color 0.2 ease, transform 0.1 ease;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+
+.proceed-brn:hover{
+    background-color: var(--hover-purple);
+}
+
+
+.cancel-order{
+    color: var(--desaturated-blue);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    margin-block-start: 2rem;
+    margin-block-end: 1.5rem;
+    transition: color 0.2 ease;
+}
+
+.cancel-order:hover{
+    color: var(--dark-blue);
+}
